@@ -25,7 +25,10 @@ export const InfiniteMovingCards = ({
   pauseOnHover = true,
   className,
 }: {
-  items: any[];
+  items: Array<
+    | { icon: string; name: string }
+    | { quote: string; name: string; title: string }
+  >;
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
   pauseOnHover?: boolean;
@@ -97,7 +100,7 @@ export const InfiniteMovingCards = ({
         }}
       >
         {items.map((item, idx) =>
-          item.icon ? (
+          "icon" in item ? (
             <li
               key={idx}
               className="flex items-center gap-2 px-6 py-2"
@@ -120,7 +123,7 @@ export const InfiniteMovingCards = ({
             >
               <blockquote>
                 <span className="relative z-20 text-lg leading-[1.6] font-normal text-neutral-800 dark:text-white">
-                  {item.quote}
+                  {"quote" in item ? item.quote : ""}
                 </span>
                 <div className="relative z-20 mt-6 flex flex-row items-center">
                   <span className="flex flex-col gap-1">
@@ -128,7 +131,7 @@ export const InfiniteMovingCards = ({
                       {item.name}
                     </span>
                     <span className="text-sm leading-[1.6] font-normal text-neutral-500 dark:text-gray-400">
-                      {item.title}
+                      {"title" in item ? item.title : ""}
                     </span>
                   </span>
                 </div>

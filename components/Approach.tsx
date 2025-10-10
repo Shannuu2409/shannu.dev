@@ -2,7 +2,6 @@
 import React from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { CanvasRevealEffect } from "@/components/ui/CanvasRevealEffect";
-import { MagicButton } from "./MagicButton";
 
 const Approach = () => {
     return (
@@ -62,6 +61,11 @@ const Card = ({
     icon,
     children,
     description,
+}: {
+    title: string;
+    icon: React.ReactNode;
+    children: React.ReactNode;
+    description: string;
 }) => {
     const [hovered, setHovered] = React.useState(false);
 
@@ -110,7 +114,7 @@ const Card = ({
     );
 };
 
-const AceternityIcon = ({ order }) => {
+const AceternityIcon = ({ order }: { order: string }) => {
     return (
         <div className="">
             <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
@@ -123,7 +127,7 @@ const AceternityIcon = ({ order }) => {
     );
 };
 
-export const Icon = ({ className, ...rest }) => {
+export const Icon = ({ className, ...rest }: { className?: string } & React.SVGProps<SVGSVGElement>) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"

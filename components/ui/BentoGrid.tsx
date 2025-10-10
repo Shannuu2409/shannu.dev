@@ -10,15 +10,7 @@ import GridGlobe from "./GridGlobe";
 import { cn } from "@/lib/utils";
 import { FaDownload } from "react-icons/fa6";
 
-// Lottie confetti options
-const LottieConfettiOptions = {
-  loop: false,
-  autoplay: false,
-  animationData: animationData,
-  rendererSettings: {
-    preserveAspectRatio: "xMidYMid slice"
-  }
-};
+// Lottie animation data is provided directly via props
 
 // BentoGrid
 export const BentoGrid = ({
@@ -71,11 +63,7 @@ export const BentoGridItem = ({
     setCopied(true);
   };
 
-  const defaultOptions = {
-    ...LottieConfettiOptions,
-    loop: copied,
-    autoplay: copied,
-  };
+  
 
   return (
     <div
@@ -190,7 +178,7 @@ export const BentoGridItem = ({
               {id === 6 && (
                 <div className="mt-5 relative">
                   <div className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"}`}>
-                    <Lottie options={defaultOptions} height={200} width={400} />
+                    <Lottie animationData={animationData} loop={copied} autoplay={copied} style={{ height: 200, width: 400 }} />
                   </div>
 
                   <MagicButton

@@ -24,7 +24,7 @@ function addVariablesForColors({ addBase, theme }: any) {
 }
 
 const config = {
-  darkMode: ["class"],
+  darkMode: "class",
   // CRITICAL: Defines the files Tailwind must scan to generate CSS.
   content: [
     "./pages/**/*.{ts,tsx}",

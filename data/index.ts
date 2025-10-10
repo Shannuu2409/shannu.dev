@@ -261,6 +261,6 @@ export const socialMedia = [
   {
     id: 3,
     img: "/link.svg",
-    link: "www.linkedin.com/in/shannu2409",
+    link: "https://www.linkedin.com/in/shanmukha-kumar-karra-7a79ba350/",
   },
 ];

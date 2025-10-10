@@ -162,7 +162,7 @@ export const projects = [
     title: "Focus-Blocker Chrome Extension",
     des: "A lightweight Chrome extension designed to enhance productivity and user experience. It seamlessly integrates with the browser to perform quick tasks, fetch real-time data, and provide instant access to essential tools — all within a simple and intuitive interface.",
     img: "/projects/focusBlocker.png",
-    iconLists: ["/skills/React.svg", "/skills/TailwindCSS.svg", "/skills/vite.svg", "/skills/javascript.svg"],
+    iconLists: ["/skills/React.svg", "/skills/TailwindCSS.svg", "/skills/Vite.svg", "/skills/javascript.svg"],
     link: "https://github.com/Shannuu2409/Focus-Blocker-ChromeExtension",
   },
   {
@@ -170,7 +170,7 @@ export const projects = [
     title: "Google Gemini Clone",
     des: "ReCreated a Gemini Clone using gemini api which works same as gppgle gemini",
     img: "/projects/geminiclone.png",
-    iconLists: ["/skills/React.svg", "/skills/google-gemini-icon.svg", "/skills/vite.svg", "/skills/javascript.svg"],
+    iconLists: ["/skills/React.svg", "/skills/google-gemini-icon.svg", "/skills/Vite.svg", "/skills/javascript.svg"],
     link: "https://github.com/Shannuu2409/Gemini-Clone",
   },
   {
@@ -178,7 +178,7 @@ export const projects = [
     title: "Notes App",
     des: "Created a Notes App to create notes with CURD operations and authentication features, User can store any notes easily and securly ",
     img: "/projects/notesapp.png",
-    iconLists: ["/skills/Node.js.svg", "/skills/React.svg", "/skills/Express.svg", "/skills/MongoDB.svg", "/skills/TailwindCSS.svg"],
+    iconLists: ["/skills/Node.js.svg", "/skills/React.svg", "/skills/Express.svg", "/skills/MongoDB.svg", "/skills/TailwindCSS.svg","/skills/Postman.svg"],
     link: "https://github.com/Shannuu2409/Note-app",
   },
   {

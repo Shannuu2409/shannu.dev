@@ -8,6 +8,7 @@ import Testimonials from "@/components/Testimonials";
 import Experience from "@/components/Experience";
 import Approach from "@/components/Approach";
 import Footer from "@/components/Footer";
+import MyTimeLine from "@/components/MyTimeLine";
 
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
         <Hero />
         <Grid />
         <SkillSet />
+        <MyTimeLine />
         <Projects/>
         <Testimonials />
         <Experience />

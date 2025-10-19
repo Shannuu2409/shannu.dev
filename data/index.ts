@@ -264,3 +264,22 @@ export const socialMedia = [
     link: "https://www.linkedin.com/in/shanmukha-kumar-karra-7a79ba350/",
   },
 ];
+export const timelineData = [
+  {
+    title: "2020",
+    content: ["Completed SSD with 9.3 GPA."],
+  },
+  {
+    title: "2023",
+    content: [
+      "Completed Diploma in Computer Science at Andhra Polytechnic, Kakinada with 7.8%.",
+    ],
+  },
+  {
+    title: "2026",
+    content: [
+      "Completed B.Tech in Information Technology at Sri Venkateswara College of Engineering, Tirupathi with 8.1 CGPA.",
+      "Currently looking for jobs and internships.",
+    ],
+  },
+];

@@ -1,4 +1,3 @@
-import { link } from "fs";
 
 export interface SkillIcon {
   name: string;
@@ -264,7 +263,7 @@ export const socialMedia = [
     link: "https://www.linkedin.com/in/shanmukha-kumar-karra-7a79ba350/",
   },
 ];
-<<<<<<< HEAD
+
 export const timelineData = [
   {
     title: "2020",
@@ -284,5 +283,4 @@ export const timelineData = [
     ],
   },
 ];
-=======
->>>>>>> ef6b3dd67796ed2afbbaf0956f075b1dc7354b6e
+

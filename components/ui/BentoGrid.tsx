@@ -159,8 +159,8 @@ export const BentoGridItem = ({
               {id === 4 && (
                 <div className="mt-5 w-[25%]">
                   <a
-                    href="/cv/ShannuCv.pdf"
-                    download="ShannuCv.pdf"
+                    href="/CV/ShannuCV.pdf"
+                    download="ShannuCV.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block"
